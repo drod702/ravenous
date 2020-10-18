@@ -3,6 +3,7 @@ import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 
+
 const business = {
   imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
   name: 'Roccos Pizza',
@@ -24,14 +25,19 @@ const businesses = [
   business
 ];
 
-function App() {
-  return (
-    <div class="App">
-  <h1>ravenous</h1>
-  <SearchBar />
-  <BusinessList businesses = {businesses}/>
-</div>
+class App extends React.Component {
+  searchYelp(term, location, sortBy) {
+    console.log(`You are searching for ${term}, ${location} and ${sortBy}`)
+  }
+  render(){
+    return (
+      <div class="App">
+        <h1>ravenous</h1>
+        <SearchBar searchYelp={this.searchYelp}/>
+        <BusinessList businesses = {businesses}/>
+      </div>
   );
+}
 }
 
 export default App;
