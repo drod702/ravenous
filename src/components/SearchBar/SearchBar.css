@@ -28,13 +28,13 @@
   }
   
   .SearchBar-sort-options li:hover {
-    color: #d4cfcf;
+    color: #ae00ff;
   }
   
   .SearchBar-sort-options li.active,
   .SearchBar-sort-options li.active:hover {
-    border-bottom: 1px solid #ae00ff;
-    color: #ae00ff;
+    border-bottom: 1px solid #fff;
+    color: #fff;
   }
   
   .SearchBar-fields {
