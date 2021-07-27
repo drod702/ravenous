@@ -1,5 +1,7 @@
 /* Universal Styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
 html {
   font-size: 18px;
 }
@@ -31,14 +33,15 @@ input:focus {
 /* App Styles */
 
 .App {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-  padding: .66rem 0;
+  padding: .7rem 0;
   text-align: center;
-  background-color: #cca353;
-  font-family: Poppins, sans-serif;
+  background-color: #ae00ff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-size: 1.8rem;
   color: #fff;
 }
